@@ -3,11 +3,10 @@ Final Project for CIS 581 by Grace Benner, Chenchen Lin, and Isaac Wasserman
 
 ## Classical Approach
 ![](figures/01_original.png)
-![](figures/02_landmarks.png)
-![](figures/03_unwrapped.png)
-![](figures/04_shadow_probabilities.png)
-![](figures/05_shadow_contours.png)
-![](figures/06_color_maps.png)
-![](figures/07_unshadowed.png)
-![](figures/08_blended.png)
+![](figures/02_isolated_faces.png)
+![](figures/03_shadow_masks.png)
+![](figures/04_shadow_contours.png)
+![](figures/05_unshadowed.png)
+![](figures/06_composited.png)
+![](figures/07_inpainted.png)
 ## Deep Learning Approach
