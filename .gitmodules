@@ -1,0 +1,3 @@
+[submodule "ShadowGP"]
+	path = ShadowGP
+	url = https://github.com/isaacwasserman/Shadow-Removal-via-Generative-Priors
