@@ -14,10 +14,14 @@ ShadowGP, a pioneering unsupervised shadow removal method, distinguishes itself 
 
 
 ## Blind Shadow Removal [2]
-
+### Description
+### Usage
 
 ## Novel Classical Approach
+### Description
 We explore an alternative to deep learning techniques for facial image manipulation, opting for a handcrafted approach with intentional design choices. Our model starts by detecting facial landmarks, generating a face mask that allows us to focus on skin regions. To address harsh adjustment boundaries, we introduce a vertex-coloring technique, softening edges of the mask. Using a Gaussian mixture model in LAB space, we identify shadowed and well-lit face regions. After further refining the shadow mask through morphological operations, color adjustments in shadowed areas are made by treating skin color as a function of pixel coordinates, employing linear regression trained on well-lit regions. We enhance the inpainting process for shadowed boundaries using the PatchMatch algorithm [3], significantly improving image fidelity. However, challenges arise in high-frequency areas like eyes or mouth, leading us to apply targeted sharpening to mitigate blurring effects. Our non-deep learning model demonstrates effectiveness in achieving somewhat-realistic facial image manipulations, offering a promising alternative to more complex neural approaches.
+
+### Usage
 
 ## References
 [1] Yingqing He, Yazhou Xing, Tianjia Zhang, and Qifeng Chen. Unsupervised portrait
