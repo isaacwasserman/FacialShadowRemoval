@@ -3,7 +3,9 @@ Final Project for CIS 581 by Grace Benner, Chenchen Lin, and Isaac Wasserman
 
 ## Using this Repo
 As two of the methods below (ShadowGP and Blind Shadow Removal) are forks of existing repositories, we have included our forks as submodules of this repository. To reproduce our results, refer to the instructions contained in each of the methods below:
-- [ShadowGP Usage](#ShadowGP)
+- [ShadowGP Usage](#Usage)
+- [Blind Shadow Removal Usage](#Usage-1)
+- [Novel Classical Approach Usage](#Usage-2)
 
 ## ShadowGP [1]
 
