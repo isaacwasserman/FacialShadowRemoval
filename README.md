@@ -1,9 +1,17 @@
 # Unsupervised Facial Shadow Removal
 Final Project for CIS 581 by Grace Benner, Chenchen Lin, and Isaac Wasserman
 
+## Using this Repo
+As two of the methods below (ShadowGP and Blind Shadow Removal) are forks of existing repositories, we have included our forks as submodules of this repository. To reproduce our results, refer to the instructions contained in each of the methods below:
+- [ShadowGP Usage](#ShadowGP)
+
 ## ShadowGP [1]
 
+### Description
 ShadowGP, a pioneering unsupervised shadow removal method, distinguishes itself from supervised approaches by leveraging deep generative priors from a pretrained GAN model. The model decomposes a shadowed portrait into a shadow-free image, a full-shadow image, and a shadow mask, reconstructing the image using progressive optimization. Given an input shadow portrait $I$, the decomposition is represented as $I=I_\text{free} \otimes M + I_\text{full} \otimes (1-M)$, where $I_\text{free}$, $I_\text{full}$, and $M$ are the shadow-free, full-shadow, and shadow mask components respectively. Each of these components, as well as a color matrix $C$ which defines differences between $I_\text{free}$ and $I_\text{full}$, are optimized to best reconstruct $I$. Using a pretrained StyleGAN2 to reproduce the original face greatly reduces the facial parameter space to StyleGAN's embedding space. When a loss threshold is reached, we assume that $I_\text{free}$ sufficiently approximates a naturally occuring shadow-free image. ShadowGP outperforms some supervised methods in LPIPS and SSIM metrics, demonstrating robustness to scenarios like watermarks and tattoos. However, it exhibits limitations in smoothing effects on facial features and slight lighting/color discrepancies. Despite these, ShadowGP offers an unsupervised alternative with notable generalization capabilities.
+
+### Usage
+
 
 ## Blind Shadow Removal [2]
 
