@@ -46,6 +46,10 @@ Here are instructions for running this method:
 
 3. Run the cells contained in [classical/classical.ipynb](classical/classical.ipynb).
 
+### Exploratory Files
+
+For the remaining exploratory files that are not a key portion of our research, such as baseline or shadow classifier. The requirements, inputs, and results are self-contained in the respective folders and .ipynb files.
+
 ## References
 [1] Yingqing He, Yazhou Xing, Tianjia Zhang, and Qifeng Chen. Unsupervised portrait
 shadow removal via generative priors. In Proceedings of the 29th ACM International
