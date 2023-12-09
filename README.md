@@ -15,11 +15,20 @@ ShadowGP, a pioneering unsupervised shadow removal method, distinguishes itself 
 ### Usage
 The ShadowGP component can be run from a self contained Jupyter Notebook at [ShadowGP/shadowgp_colab.ipynb](ShadowGP/shadowgp_colab.ipynb).
 
-This notebook installs all of its required packages and weights. When run inside of Google Colab, it will automatically import the rest of the repository.
+This notebook installs all of its required packages and weights. When run inside of Google Colab, it will automatically import the rest of the repository. 
 
 ## Blind Shadow Removal [2]
 ### Description
+BlindShadowRemoval is a supervised model specialized for portrait shadow removal. Different from prior work, Blind Shadow Removal method only
+look at gray-scale image for first stage decomposition:$\hat{I}_{free,gs} & = I_{gs} \odot (1 - B) + I_{gs} \odot B \oslash M_I'
+        = I_{gs} \odot (1-B +B\oslash M_I')
+        = I_{gs} \odot W$
+This method avoids turning this problem into a memorization mode. The model consists of two major steps: 1) grayscale shadow removal; 2) colorization. Grayscale shadow removal module predicts the deshadowed face in grayscale. This module consists of an encoder, a stack of residual non-local blocks, and a decoder. Colorization module breaks down into 3 steps: 1) erasing, 2) inpainting, and 3) color space transformation. Overall, BlindShadowRemoval is a novel approach to decompose RGB shadow removal into grayscale shadow removal and colorization, which provides state-of-the-art shadow removal and shadow segmentation results and photo-realistic deshadow quality.
+
 ### Usage
+The Blind Shadow Removal component can be run from a self contained Jupyter Notebook at [BlindShadowRemoval/BlindShadowRemoval.ipynb](BlindShadowRemoval/BlindShadowRemoval.ipynb).
+
+This notebook installs all of its required packages and weights. When run inside of Google Colab, it will automatically import the rest of the repository. 
 
 ## Novel Classical Approach
 ### Description
