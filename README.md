@@ -10,7 +10,7 @@ Final Project for CIS 581 by Grace Benner, Chenchen Lin, and Isaac Wasserman
 >
 >- [ShadowGP Usage](#Usage)
 >- [Blind Shadow Removal Usage](#Usage-1)
->- [Novel Classical Approach Usage]>(#Usage-2)
+>- [Novel Classical Approach Usage](#Usage-2)
 
 ## ShadowGP [1]
 
