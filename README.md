@@ -2,7 +2,12 @@
 Final Project for CIS 581 by Grace Benner, Chenchen Lin, and Isaac Wasserman
 
 ## Using this Repo
-As two of the methods below (ShadowGP and Blind Shadow Removal) are forks of existing repositories, we have included our forks as submodules of this repository. To reproduce our results, refer to the instructions contained in each of the methods below:
+> 🚧 **Dependencies**
+> 
+> Note that we have not included a `requirements.txt` file in this repo. Our codebase is made up of two preexisting shadow removal methods and one novel method, each with their own conflicting dependencies. Additionally, in the case of the novel method, not all of the dependencies can be installed from `pip` or `conda`. 
+>
+> To reproduce our results with each method, refer to the various "Usage" sections listed below.
+
 - [ShadowGP Usage](#Usage)
 - [Blind Shadow Removal Usage](#Usage-1)
 - [Novel Classical Approach Usage](#Usage-2)
