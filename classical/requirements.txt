@@ -1,7 +1,0 @@
-matplotlib
-opencv-python
-mediapipe
-scikit-image
-scikit-learn
-torch
-pillow
